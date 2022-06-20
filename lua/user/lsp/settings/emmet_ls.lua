@@ -3,6 +3,7 @@
 return {
   cmd = { "ls_emmet", "--stdio" },
   filetypes = {
+    "gotmpl",
     "html",
     "css",
     "scss",

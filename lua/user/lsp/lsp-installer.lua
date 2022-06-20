@@ -4,6 +4,8 @@ if not status_ok then
 end
 
 local servers = {
+  "gopls",
+  "rust_analyzer",
   "cssls",
   "cssmodules_ls",
   "emmet_ls",
@@ -91,6 +93,11 @@ for _, server in pairs(servers) do
   if server == "emmet_ls" then
     local emmet_ls_opts = require "user.lsp.settings.emmet_ls"
     opts = vim.tbl_deep_extend("force", emmet_ls_opts, opts)
+  end
+
+  if server == "html" then
+    local html_opts = require "user.lsp.settings.html"
+    opts = vim.tbl_deep_extend("force", html_opts, opts)
   end
 
   lspconfig[server].setup(opts)

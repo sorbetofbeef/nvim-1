@@ -36,6 +36,7 @@ packer.init {
       return require("packer.util").float { border = "rounded" }
     end,
   },
+  max_jobs = 10,
 }
 
 -- Install your plugins here
@@ -60,7 +61,7 @@ return packer.startup(function(use)
   -- use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
   use "unblevable/quick-scope"
-  use "phaazon/hop.nvim"
+  -- use "phaazon/hop.nvim"
   use "andymass/vim-matchup"
   use "nacro90/numb.nvim"
   use "monaqa/dial.nvim"
@@ -105,7 +106,7 @@ return packer.startup(function(use)
   use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use "lunarvim/darkplus.nvim"
   use "rose-pine/neovim"
-  -- use "rebelot/kanagawa.nvim"
+  use "rebelot/kanagawa.nvim"
 
   -- cmp plugins
   -- use "hrsh7th/nvim-cmp" -- The completion plugin
