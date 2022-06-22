@@ -61,7 +61,7 @@ return packer.startup(function(use)
   -- use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
   use "unblevable/quick-scope"
-  -- use "phaazon/hop.nvim"
+  use "phaazon/hop.nvim"
   use "andymass/vim-matchup"
   use "nacro90/numb.nvim"
   use "monaqa/dial.nvim"
@@ -180,7 +180,7 @@ return packer.startup(function(use)
   -- Treesitter
   use {
     "nvim-treesitter/nvim-treesitter",
-    -- run = ":TSUpdate",
+    run = ":TSUpdate",
   }
   use "JoosepAlviste/nvim-ts-context-commentstring"
   use { "p00f/nvim-ts-rainbow" }
