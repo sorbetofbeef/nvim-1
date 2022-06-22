@@ -1,7 +1,7 @@
 -- https://github.com/pedro757/emmet
 -- npm i -g ls_emmet
 return {
-  cmd = { "emmet_ls", "--stdio" },
+  cmd = { "emmet-ls", "--stdio" },
   filetypes = {
     "gotmpl",
     "html",

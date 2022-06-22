@@ -17,7 +17,7 @@ local cfg = {
   -- This setting only take effect in insert mode, it does not affect signature help in normal
   -- mode, 10 by default
 
-  floating_window = false, -- show hint in a floating window, set to false for virtual text only mode
+  floating_window = true, -- show hint in a floating window, set to false for virtual text only mode
 
   floating_window_above_cur_line = false, -- try to place the floating above the current line when possible Note:
   -- will set to true when fully tested, set to false will use whichever side has more space
@@ -32,7 +32,7 @@ local cfg = {
   -- to view the hiding contents
   max_width = 120, -- max_width of signature floating_window, line will be wrapped if exceed max_width
   handler_opts = {
-    border = "rounded", -- double, rounded, single, shadow, none
+    border = "shadow", -- double, rounded, single, shadow, none
   },
 
   always_trigger = false, -- sometime show signature on new line or in middle of parameter can be confusing, set it to false for #58

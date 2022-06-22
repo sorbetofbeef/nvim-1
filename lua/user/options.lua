@@ -1,10 +1,10 @@
 local options = {
   backup = false,                          -- creates a backup file
   clipboard = "unnamedplus",               -- allows neovim to access the system clipboard
-  cmdheight = 1,                           -- more space in the neovim command line for displaying messages
+  cmdheight = 2,                           -- more space in the neovim command line for displaying messages
   completeopt = { "menuone", "noselect" }, -- mostly just for cmp
   conceallevel = 0,                        -- so that `` is visible in markdown files
-  -- colorcolumn = "80",
+  colorcolumn = "80",
   -- colorcolumn = "120",
   fileencoding = "utf-8",                  -- the encoding written to a file
   hlsearch = true,                         -- highlight all matches on previous search pattern
@@ -37,7 +37,7 @@ local options = {
   wrap = false,                            -- display lines as one long line
   scrolloff = 8,                           -- is one of my fav
   sidescrolloff = 8,
-  guifont = "monospace:h17",               -- the font used in graphical neovim applications
+  guifont = "PragmataPro Liga:h10",               -- the font used in graphical neovim applications
 
 }
 vim.g.loaded_netrw = 1
@@ -57,5 +57,6 @@ vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
 vim.filetype.add({
     extension = {
       conf = "dosini",
+      template = "gotmpl",
   },
 })
